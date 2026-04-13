@@ -112,6 +112,7 @@
       container.style.transition = 'none';
       container.style.transform = `translateY(-${current * 100}vh)`;
       if (scrollHint) scrollHint.classList.toggle('is-hidden', current !== 0);
+      updateActiveNav();
       requestAnimationFrame(() => {
         container.style.transition = '';
       });
