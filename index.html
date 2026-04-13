@@ -14,11 +14,23 @@
 
   <nav class="nav">
     <span class="nav__name">SuLin</span>
-    <div class="nav__links">
-      <a href="#work" data-goto="1">作品</a>
-      <a href="#awards" data-goto="2">获奖</a>
-      <a href="#about" data-goto="3">关于</a>
-      <a href="#contact" data-goto="4">联系</a>
+    <button class="nav__burger" id="navBurger" aria-label="菜单">
+      <span></span>
+      <span></span>
+    </button>
+    <div class="nav__center" id="navLinks">
+      <a href="#hero" data-goto="0" class="nav__anchor is-active">首页</a>
+      <a href="#work" data-goto="1" class="nav__anchor">作品</a>
+      <a href="#awards" data-goto="2" class="nav__anchor">获奖</a>
+      <a href="#about" data-goto="3" class="nav__anchor">关于</a>
+      <a href="#stack" data-goto="4" class="nav__anchor">技术栈</a>
+      <a href="#contact" data-goto="5" class="nav__anchor">联系</a>
+    </div>
+    <div class="nav__right">
+      <a href="https://blog.supage.eu.org/" target="_blank" rel="noopener">博客</a>
+      <a href="https://img.supage.eu.org/" target="_blank" rel="noopener">图床</a>
+      <a href="https://blog.supage.eu.org/about" target="_blank" rel="noopener">友链</a>
+      <a href="https://github.com/alltobebetter" target="_blank" rel="noopener">GitHub</a>
     </div>
   </nav>
 
@@ -253,6 +265,58 @@
                 <path d="M1 13L13 1M13 1H3M13 1v10" stroke="currentColor" stroke-width="1.2"/>
               </svg>
             </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section stack" id="stack">
+      <div class="stack__inner">
+        <div class="stack__header">
+          <span class="section-label">技术栈</span>
+        </div>
+        <div class="stack__grid">
+          <div class="stack__group">
+            <span class="stack__cat">语言</span>
+            <div class="stack__items">
+              <span>Python</span>
+              <span>TypeScript</span>
+              <span>JavaScript</span>
+              <span>C / C++</span>
+              <span>SQL</span>
+            </div>
+          </div>
+          <div class="stack__group">
+            <span class="stack__cat">前端</span>
+            <div class="stack__items">
+              <span>React</span>
+              <span>Next.js</span>
+              <span>Vue</span>
+              <span>HTML / CSS</span>
+              <span>Electron</span>
+            </div>
+          </div>
+          <div class="stack__group">
+            <span class="stack__cat">AI / ML</span>
+            <div class="stack__items">
+              <span>PyTorch</span>
+              <span>TensorFlow</span>
+              <span>LangChain</span>
+              <span>OpenCV</span>
+              <span>HuggingFace</span>
+            </div>
+          </div>
+          <div class="stack__group">
+            <span class="stack__cat">后端 & 基础设施</span>
+            <div class="stack__items">
+              <span>Node.js</span>
+              <span>FastAPI</span>
+              <span>Docker</span>
+              <span>AWS</span>
+              <span>Cloudflare</span>
+              <span>Vercel</span>
+              <span>PostgreSQL</span>
+            </div>
           </div>
         </div>
       </div>
